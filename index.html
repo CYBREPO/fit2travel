@@ -1,0 +1,905 @@
+<!DOCTYPE html>
+<!--[if IE 9]><html class="lt-ie10" lang="en" > <![endif]-->
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FitToTravel</title>
+
+
+    <link rel="icon" href="">
+
+    <!-- Boostrap 4.6 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <!-- Google Font Roboto Condensed & Libre Baskerville -->
+    <link
+        href="https://fonts.googleapis.com/css?family=Libre+Baskerville:400,400i,700|Roboto+Condensed:300,400,700&display=swap"
+        rel="stylesheet">
+    <!-- Font Awesome 5.11 -->
+    <link src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.1/css/all.min.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.1/js/all.min.js"></script>
+    <!-- Slick Slider Styles 1.9.0 -->
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css" />
+    <!-- Animation Library AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="/styles/style.css">
+
+</head>
+
+<body>
+
+    <header id="header" class="d-print-none">
+        <nav class="navbar fixed-top navbar-expand-lg navbar-dark" id="mainNav">
+            <a class="navbar-brand d-block" href="/">
+                Logo
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainNavbar"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="mainNavbar">
+                <ul class="navbar-nav ml-md-auto d-md-flex">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="/">Home</a>
+                    </li>
+                    <li class="nav-item dropdown position-static">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Destinations</a>
+                        <div class="dropdown-menu w-100" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item d-block d-sm-none" href="/destinations/africa">Africa</a>
+                            <a class="dropdown-item d-block d-sm-none" href="/destinations/asia">Asia</a>
+                            <a class="dropdown-item d-block d-sm-none" href="/destinations/europe">Europe</a>
+                            <a class="dropdown-item d-block d-sm-none" href="/destinations/south-america">South
+                                America</a>
+                            <a class="dropdown-item d-block d-sm-none" href="/destinations/north-america">North
+                                America</a>
+                            <div class="container-fluid d-none d-sm-block">
+                                <div class="row">
+
+
+                                    <div class="col-md">
+                                        <div class="category text-center mb-2"
+                                            style="background-image:url(/images/1573492714_original.jpeg);">
+                                            <h4 class="m-0">Africa</h4>
+                                        </div>
+
+
+
+
+                                        <a class="dropdown-item" href="/egypt">Egypt</a>
+
+
+
+                                        <a class="dropdown-item" href="/place/kenya">Kenya</a>
+
+
+
+                                        <a class="dropdown-item" href="/place/morocco">Morocco</a>
+
+
+
+                                        <a class="dropdown-item" href="/south-africa">South Africa</a>
+
+
+
+                                        <a class="dropdown-item" href="/place/tanzania">Tanzania</a>
+
+
+
+                                        <a class="dropdown-item" href="/uganda">Uganda</a>
+
+
+                                    </div>
+
+
+
+                                    <div class="col-md">
+                                        <div class="category text-center mb-2"
+                                            style="background-image:url(/images/1572633279_original.jpeg);">
+                                            <h4 class="m-0">Europe</h4>
+                                        </div>
+
+
+                                        <a class="dropdown-item" href="/croatia">Croatia</a>
+
+
+
+
+
+                                        <a class="dropdown-item" href="/place/finland">Finland</a>
+
+
+
+                                        <a class="dropdown-item" href="/greece">Greece</a>
+
+
+
+                                        <a class="dropdown-item" href="/place/iceland">Iceland</a>
+
+
+
+                                        <a class="dropdown-item" href="/place/italy">Italy</a>
+
+
+
+                                        <a class="dropdown-item" href="/place/montenegro">Montenegro</a>
+
+
+
+                                        <a class="dropdown-item" href="/portugal">Portugal</a>
+
+
+                                    </div>
+
+
+
+                                    <div class="col-md">
+                                        <div class="category text-center mb-2"
+                                            style="background-image:url(/images/1572633820_original.jpeg);">
+                                            <h4 class="m-0">Asia</h4>
+                                        </div>
+
+
+
+
+                                        <a class="dropdown-item" href="/place/bhutan">Bhutan</a>
+
+
+
+                                        <a class="dropdown-item" href="/cambodia">Cambodia</a>
+
+
+
+                                        <a class="dropdown-item" href="/india">India</a>
+
+
+
+                                        <a class="dropdown-item" href="/indonesia">Indonesia</a>
+
+
+
+                                        <a class="dropdown-item" href="/place/sri-lanka">Sri Lanka</a>
+
+
+
+                                        <a class="dropdown-item" href="/thailand">Thailand</a>
+
+
+
+                                        <a class="dropdown-item" href="/vietnam">Vietnam</a>
+
+
+                                    </div>
+
+
+
+                                    <div class="col-md">
+                                        <div class="category text-center mb-2"
+                                            style="background-image:url(/images/1573493823_original.jpeg);">
+                                            <h4 class="m-0">South America</h4>
+                                        </div>
+
+
+                                        <a class="dropdown-item" href="/place/argentina">Argentina</a>
+
+
+
+                                        <a class="dropdown-item" href="/place/brazil">Brazil</a>
+
+
+
+                                        <a class="dropdown-item" href="/place/chile">Chile</a>
+
+
+
+                                        <a class="dropdown-item" href="/place/colombia">Colombia</a>
+
+
+
+                                        <a class="dropdown-item" href="/place/ecuador">Ecuador</a>
+
+
+
+                                        <a class="dropdown-item" href="/peru">Peru</a>
+
+
+
+
+                                    </div>
+
+
+
+                                    <div class="col-md">
+                                        <div class="category text-center mb-2"
+                                            style="background-image:url(/images/1572634030_original.jpeg);">
+                                            <h4 class="m-0">North America</h4>
+                                        </div>
+
+
+                                        <a class="dropdown-item" href="/costa-rica">Costa Rica</a>
+
+
+
+                                        <a class="dropdown-item" href="/place/guatemala">Guatemala</a>
+
+
+
+
+
+                                        <a class="dropdown-item" href="/panama">Panama</a>
+
+
+                                    </div>
+
+
+
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown position-static">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Experiences</a>
+                        <div class="dropdown-menu w-100" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item d-block d-sm-none" href="/hike-run">Hiking Adventure</a>
+                            <a class="dropdown-item d-block d-sm-none" href="/fitness">Fitness</a>
+                            <a class="dropdown-item d-block d-sm-none" href="/travel-styles/cruises">Cruises</a>
+                            <a class="dropdown-item d-block d-sm-none" href="/solo-travel">Solo</a>
+                            <a class="dropdown-item d-block d-sm-none" href="/women-only">Women Only</a>
+                            <a class="dropdown-item d-block d-sm-none" href="/culinary">Culinary & Wine</a>
+                            <a class="dropdown-item d-block d-sm-none" href="/travel-styles/guided-vacations">Guided
+                                Vacations</a>
+                            <a class="dropdown-item d-block d-sm-none" href="/wellness">Wellness</a>
+                            <a class="dropdown-item d-block d-sm-none" href="/spa-and-relaxation">Spa & Relaxation</a>
+                            <a class="dropdown-item d-block d-sm-none" href="/yoga-and-meditation">Yoga & Meditation</a>
+                            <div class="container-fluid d-none d-sm-block">
+                                <div class="row">
+                                    <div class="col-md">
+                                        <div class="category text-center mb-2"
+                                            style="background-image:url(/images/1573492043_original.jpeg);">
+                                            <h4 class="m-0">Soft Adventure</h4>
+                                        </div>
+                                        <a class="dropdown-item" href="/hike-run">Hiking Adventure</a>
+                                        <a class="dropdown-item" href="/fitness">Fitness</a>
+                                    </div>
+                                    <div class="col-md">
+                                        <div class="category text-center mb-2"
+                                            style="background-image:url(/images/1573506147_original.jpeg);">
+                                            <h4 class="m-0">Cruises</h4>
+                                        </div>
+                                        <a class="dropdown-item" href="/travel-styles/cruises">Cruises</a>
+                                    </div>
+                                    <div class="col-md">
+                                        <div class="category text-center mb-2"
+                                            style="background-image:url(/images/1573495330_original.jpeg);">
+                                            <h4 class="m-0">Special Interest</h4>
+                                        </div>
+                                        <a class="dropdown-item" href="/solo-travel">Solo</a>
+                                        <a class="dropdown-item" href="/women-only">Women Only</a>
+                                        <a class="dropdown-item" href="/culinary">Culinary & Wine</a>
+                                        <a class="dropdown-item" href="/travel-styles/guided-vacations">Guided
+                                            Vacations</a>
+                                    </div>
+                                    <div class="col-md">
+                                        <div class="category text-center mb-2"
+                                            style="background-image:url(/images/1573502851_original.jpeg);">
+                                            <h4 class="m-0">Rejuvenate</h4>
+                                        </div>
+                                        <a class="dropdown-item" href="/wellness">Wellness</a>
+                                        <a class="dropdown-item" href="/spa-and-relaxation">Spa & Relaxation</a>
+                                        <a class="dropdown-item" href="/yoga-and-meditation">Yoga & Meditation</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="">Why Us</a>
+                    </li>
+                </ul>
+            </div>
+            <a class="btn btn-outline-light d-none d-lg-inline-block mb-3 mb-md-0 ml-md-3" href="/contact">Contact</a>
+        </nav>
+    </header>
+    <!-- Print Only Header -->
+    <div class="d-none d-print-block text-center">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-3">
+                    <a class="d-block" href="/">
+
+                        <img src="https://cdn1.gttwl.net/logos/63762214393006975.png?auto=format%2Cenhance&crop=entropy&fill=blur&fit=crop&q=60"
+                            alt="">
+
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Wrap Content -->
+    <div class="wrap-content">
+        <!-- Notice -->
+
+        <div class="wrap-slider">
+
+
+            <div class="index-slider">
+                <div>
+                    <img src="/images/south_africa_63755214680750114.jpg" alt="South Africa">
+                    <div class="index-caption text-center">
+                        <p class="uppercase">Wellness + Fitness + Travel</p>
+                        <h2>South Africa</h2>
+                        <a href="/south-africa" class="btn btn-lg btn-outline-light">Learn More</a>
+                    </div>
+                </div>
+                <div>
+                    <img src="/images/1571862256_original.jpeg" alt="Croatia">
+                    <div class="index-caption text-center">
+                        <p class="uppercase">Wellness + Fitness + Travel</p>
+                        <h2>Croatia</h2>
+                        <a href="/croatia" class="btn btn-lg btn-outline-light">Learn More</a>
+                    </div>
+                </div>
+                <div>
+                    <img src="/images/1573503933_original.jpeg" alt="Thailand">
+                    <div class="index-caption text-center">
+                        <p class="uppercase">Wellness + Fitness + Travel</p>
+                        <h2>Thailand</h2>
+                        <a href="/thailand" class="btn btn-lg btn-outline-light">Learn More</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <!-- Intro -->
+        <section class="intro">
+            <div class="container">
+                <div class="row justify-content-md-center text-center">
+                    <div class="col-md-8 col-lg-6">
+                        <div class="section-title">
+                            <h3 class="uppercase">For The Love Of<br>Wellness, Fitness & Travel</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="row justify-content-md-center">
+                    <div class="col-md-10 col-lg-8">
+                        <div class="section-content">
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Inventore rem ipsum eligendi
+                                pariatur laudantium, magnam culpa odio. Sed reprehenderit aut ut nam dolores. Suscipit
+                                vitae illum corrupti sapiente blanditiis iure!</p>
+                            <p class="text-center">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vero
+                                blanditiis officiis modi laudantium tempora. Libero..</p>
+                        </div>
+                        <div class="cta-call text-center my-5">
+                            <h5 class="uppercase">
+                                Have Questions? <a href="#">Email Us</a>
+
+                                or call us at <a href="#">99999-99999</a>
+
+                            </h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Why Us -->
+        <section class="why-us pt-0">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-7 text-center pb-4">
+                        <img src="https://cdn2.gttwl.net/attachments/00eb357c-3fdc-475a-83d1-16e99312e307.png"
+                            alt="Why Partner With Us" class="m-auto w-75" />
+                    </div>
+                    <div class="col-lg-5">
+                        <div class="section-title pb-5">
+                            <h3 class="text-center text-lg-left">Why Partner With Us?</h3>
+                        </div>
+                        <ul class="mb-5 p-0">
+                            <li data-aos="fade-left" class="mb-2 ml-4">No Cost Partnership Program</li>
+                            <li data-aos="fade-left" class="mb-2 ml-4">Eliminate Upfront Costs</li>
+                            <li data-aos="fade-left" class="mb-2 ml-4">Travel Concierge Services</li>
+                            <li data-aos="fade-left" class="mb-2 ml-4">Pre-Travel Preparation</li>
+                            <li data-aos="fade-left" class="mb-2 ml-4">In-Destination Support & Destination Management
+                            </li>
+                            <li data-aos="fade-left" class="mb-2 ml-4">Streamlined Website Development</li>
+                            <li data-aos="fade-left" class="mb-2 ml-4">Seamless Payment Integration</li>
+                            <li data-aos="fade-left" class="mb-2 ml-4">Marketing Materials at Your Fingertips</li>
+                            <li data-aos="fade-left" class="mb-2 ml-4">Assistance with Airfare</li>
+                            <li data-aos="fade-left" class="mb-2 ml-4">Assistance with Airfare Booking & Travel
+                                Insurance</li>
+                            <li data-aos="fade-left" class="mb-2 ml-4">Included Round-Trip Airport Transfer</li>
+                            <li data-aos="fade-left" class="mb-2 ml-4">Dietary Accommodations Made Easy</li>
+                            <li data-aos="fade-left" class="mb-2 ml-4">Luxe Accommodations</li>
+                        </ul>
+                        <a href="#" data-aos="fade-up">Learn More About Working With fittotravel</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- fittotravel Offers with Main tag -->
+
+
+        <section class="main no-padding-top">
+            <div class="container">
+                <div class="section-title text-center mb-5">
+                    <h3 class="uppercase">Fit2Travel Experiences</h3>
+                </div>
+            </div>
+            <div class="row no-gutters">
+
+                <div class="col-sm-6 col-md-3" data-aos="fade-up">
+                    <a href="/yoga-and-meditation" class="thumb special">
+                        <img src="/images/1576011198_original.jpeg?auto=format%2Cenhance&crop=entropy&fill=blur&fit=crop&q=60#tatid:17860963"
+                            alt="Yoga & Meditation">
+                        <div class="thumb-content gradient-bd">
+                            <h4 class="mb-3">Yoga & Meditation</h4>
+                            <span class="uppercase link">View All Trips</span>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col-sm-6 col-md-3" data-aos="fade-up">
+                    <a href="/women-only" class="thumb special">
+                        <img src="/images/1576010558_original.jpeg?auto=format%2Cenhance&crop=entropy&fill=blur&fit=crop&q=60#tatid:17860965"
+                            alt="Women Only">
+                        <div class="thumb-content gradient-bd">
+                            <h4 class="mb-3">Women Only</h4>
+                            <span class="uppercase link">View All Trips</span>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col-sm-6 col-md-3" data-aos="fade-up">
+                    <a href="/spa-and-relaxation" class="thumb special">
+                        <img src="/images/1576011254_original.jpeg?auto=format%2Cenhance&crop=entropy&fill=blur&fit=crop&q=60#tatid:17860961"
+                            alt="Spa & Relaxation">
+                        <div class="thumb-content gradient-bd">
+                            <h4 class="mb-3">Spa & Relaxation</h4>
+                            <span class="uppercase link">View All Trips</span>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col-sm-6 col-md-3" data-aos="fade-up">
+                    <a href="/solo-travel" class="thumb special">
+                        <img src="/images/1576871821_original.jpeg?auto=format%2Cenhance&crop=entropy&fill=blur&fit=crop&q=60#tatid:17862801"
+                            alt="Solo Travel">
+                        <div class="thumb-content gradient-bd">
+                            <h4 class="mb-3">Solo Travel</h4>
+                            <span class="uppercase link">View All Trips</span>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col-sm-6 col-md-3" data-aos="fade-up">
+                    <a href="/culinary" class="thumb special">
+                        <img src="/images/1576011181_original.jpeg?auto=format%2Cenhance&crop=entropy&fill=blur&fit=crop&q=60#tatid:17860967"
+                            alt="Culinary">
+                        <div class="thumb-content gradient-bd">
+                            <h4 class="mb-3">Culinary</h4>
+                            <span class="uppercase link">View All Trips</span>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col-sm-6 col-md-3" data-aos="fade-up">
+                    <a href="/hike-run" class="thumb special">
+                        <img src="/images/1576011033_original.jpeg?auto=format%2Cenhance&crop=entropy&fill=blur&fit=crop&q=60#tatid:17860969"
+                            alt="Hiking Adventure">
+                        <div class="thumb-content gradient-bd">
+                            <h4 class="mb-3">Hiking Adventure</h4>
+                            <span class="uppercase link">View All Trips</span>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col-sm-6 col-md-3" data-aos="fade-up">
+                    <a href="/wellness" class="thumb special">
+                        <img src="/images/1576010222_original.jpeg?auto=format%2Cenhance&crop=entropy&fill=blur&fit=crop&q=60#tatid:17860957"
+                            alt="Wellness">
+                        <div class="thumb-content gradient-bd">
+                            <h4 class="mb-3">Wellness</h4>
+                            <span class="uppercase link">View All Trips</span>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col-sm-6 col-md-3" data-aos="fade-up">
+                    <a href="/fitness" class="thumb special">
+                        <img src="/images/1576010962_original.jpeg?auto=format%2Cenhance&crop=entropy&fill=blur&fit=crop&q=60#tatid:17860959"
+                            alt="Fitness">
+                        <div class="thumb-content gradient-bd">
+                            <h4 class="mb-3">Fitness</h4>
+                            <span class="uppercase link">View All Trips</span>
+                        </div>
+                    </a>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Products -->
+
+
+        <section class="trips">
+            <div class="container">
+                <div class="section-title text-center mb-4">
+                    <h4 class="uppercase">Featured Offers</h4>
+                </div>
+                <div class="row">
+
+                    <div class="col-md-6 col-lg-4 mb-4" data-aos="fade-up">
+                        <a href="/product/bali-yoga-culture-and-beach-exploration-2024" class="card card-prod">
+                            <div class="card-img">
+                                <img src="/images/96649624_H1_COMO_Uma_Canggu_Lagoon_pool_63763985898000499_63765672092464038.jpg?auto=format%2Cenhance&crop=entropy&fill=blur&fit=crop&h=480&q=60&w=640#tatid:18033614"
+                                    class="card-img-top" alt="Bali Yoga, Culture & Beach Exploration">
+
+                                <small>Indonesia</small>
+
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">Bali Yoga, Culture & Beach Exploration</h5>
+                                <div class="link">Learn More</div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="col-md-6 col-lg-4 mb-4" data-aos="fade-up">
+                        <a href="/product/exploring-arenal-volcano-punta-islita" class="card card-prod">
+                            <div class="card-img">
+                                <img src="/images/d4a77cd7-5e85-4b2f-8c68-204eacbf1d1e.jpg?auto=format%2Cenhance&crop=entropy&fill=blur&fit=crop&h=480&q=60&w=640#tatid:18032124"
+                                    class="card-img-top" alt="Exploring Arenal Volcano & Punta Islita">
+
+                                <small>Costa Rica</small>
+
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">Exploring Arenal Volcano & Punta Islita</h5>
+                                <div class="link">Learn More</div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="col-md-6 col-lg-4 mb-4" data-aos="fade-up">
+                        <a href="/product/the-best-of-punta-islita" class="card card-prod">
+                            <div class="card-img">
+                                <img src="/images/fe98295b-1803-48c9-b4b8-6aa0a077cc88.jpg?auto=format%2Cenhance&crop=entropy&fill=blur&fit=crop&h=480&q=60&w=640#tatid:18031312"
+                                    class="card-img-top" alt="The Best of Punta Islita">
+
+                                <small>Costa Rica</small>
+
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">The Best of Punta Islita</h5>
+                                <div class="link">Learn More</div>
+                            </div>
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Featured Place -->
+
+
+
+        <section id="featured" class="bcg-parallax">
+            <div class="bcg"
+                style="background-image: url(https://cdn4.gttwl.net/attachments/Portugal_63749273186638186.jpg?auto=format%2Cenhance&crop=entropy&fill=blur&fit=crop&q=60#tatid:17872522);">
+            </div>
+            <div class="bcg-content text-center">
+                <p>Spotlight Destination</p>
+                <h4 class="uppercase">Portugal</h4>
+                <a href="/portugal" class="btn btn-lg btn-outline-light mt-4" data-aos="fade-up">Visit Today</a>
+            </div>
+        </section>
+
+
+        <!-- Blogs -->
+
+
+        <section class="articles">
+            <div class="container">
+                <div class="articles-slider">
+
+                    <div>
+                        <div class="row">
+                            <div class="col-sm-6 col-md-5">
+                                <p class="post-kind uppercase">Trending Article</p>
+                                <h3 class="post-title"><a
+                                        href="/blog/the-best-wellness-retreat-locations-in-southern-italy-2023">Lorem
+                                        ipsum dolor, sit amet consectetur adipisicing elit. Est, a?</a></h3>
+                                <p class="post-summary d-sm-none d-md-block">
+                                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eaque cum porro nobis
+                                    ipsum distinctio quam reprehenderit amet praesentium quibusdam ea quae quidem
+                                    veritatis, eveniet eos neque nisi vero illo! Dolores?
+                                </p>
+                                <a href="/blog/why-iceland-is-the-perfect-destination-for-a-wellness-retreat"
+                                    class="link">Read More</a>
+                            </div>
+                            <div class="col-sm-6 col-md-7">
+                                <a href="/blog/why-iceland-is-the-perfect-destination-for-a-wellness-retreat">
+                                    <img src="/images/f3e9a523-06a2-4e04-a01c-65b8667625c8.jpeg?auto=format%2Cenhance&crop=entropy&fill=blur&fit=crop&h=480&q=60&w=640#tatid:18042808"
+                                        alt="Why Iceland Is The Perfect Destination For a Wellness Retreat"
+                                        class="post-img">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <div class="row">
+                            <div class="col-sm-6 col-md-5">
+                                <p class="post-kind uppercase">Trending Article</p>
+                                <h3 class="post-title"><a
+                                        href="/blog/the-best-wellness-retreat-locations-in-southern-italy-2023">Lorem
+                                        ipsum dolor, sit amet consectetur adipisicing elit. Est, a?</a></h3>
+                                <p class="post-summary d-sm-none d-md-block">
+                                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eaque cum porro nobis
+                                    ipsum distinctio quam reprehenderit amet praesentium quibusdam ea quae quidem
+                                    veritatis, eveniet eos neque nisi vero illo! Dolores?
+                                </p>
+                                <a href="/blog/top-things-to-do-in-the-algarve-for-wellness-retreats" class="link">Read
+                                    More</a>
+                            </div>
+                            <div class="col-sm-6 col-md-7">
+                                <a href="/blog/top-things-to-do-in-the-algarve-for-wellness-retreats">
+                                    <img src="/images/9d7543d6-0a40-425d-892c-bc45fee6ad06.jpeg?auto=format%2Cenhance&crop=entropy&fill=blur&fit=crop&h=480&q=60&w=640#tatid:18022171"
+                                        alt="Top Things To Do In The Algarve For Wellness Retreats" class="post-img">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <div class="row">
+                            <div class="col-sm-6 col-md-5">
+                                <p class="post-kind uppercase">Trending Article</p>
+                                <h3 class="post-title"><a
+                                        href="/blog/the-best-wellness-retreat-locations-in-southern-italy-2023">Lorem
+                                        ipsum dolor, sit amet consectetur adipisicing elit. Est, a?</a></h3>
+                                <p class="post-summary d-sm-none d-md-block">
+                                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eaque cum porro nobis
+                                    ipsum distinctio quam reprehenderit amet praesentium quibusdam ea quae quidem
+                                    veritatis, eveniet eos neque nisi vero illo! Dolores?
+                                </p>
+                                <a href="/blog/how-to-host-your-own-pilates-retreat" class="link">Read More</a>
+                            </div>
+                            <div class="col-sm-6 col-md-7">
+                                <a href="/blog/how-to-host-your-own-pilates-retreat">
+                                    <img src="https://cdn4.gttwl.net/attachments/6ca3153a-be20-4d0b-a6e9-b38dae39f828.jpeg?auto=format%2Cenhance&crop=entropy&fill=blur&fit=crop&h=480&q=60&w=640#tatid:18021689"
+                                        alt="How To Host Your Own Pilates Retreat" class="post-img">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <div class="row">
+                            <div class="col-sm-6 col-md-5">
+                                <p class="post-kind uppercase">Trending Article</p>
+                                <h3 class="post-title"><a
+                                        href="/blog/the-best-wellness-retreat-locations-in-southern-italy-2023">Lorem
+                                        ipsum dolor, sit amet consectetur adipisicing elit. Est, a?</a></h3>
+                                <p class="post-summary d-sm-none d-md-block">
+                                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eaque cum porro nobis
+                                    ipsum distinctio quam reprehenderit amet praesentium quibusdam ea quae quidem
+                                    veritatis, eveniet eos neque nisi vero illo! Dolores?
+                                </p>
+                                <a href="/blog/the-best-wellness-retreat-locations-in-southern-italy-2023"
+                                    class="link">Read More</a>
+                            </div>
+                            <div class="col-sm-6 col-md-7">
+                                <a href="/blog/the-best-wellness-retreat-locations-in-southern-italy-2023">
+                                    <img src="/images/ba6426b0-c6d3-489e-8e67-e72d840d2fda.jpeg?auto=format%2Cenhance&crop=entropy&fill=blur&fit=crop&h=480&q=60&w=640#tatid:18020661"
+                                        alt="The Best Wellness Retreat Locations in Southern Italy 2023"
+                                        class="post-img">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Travel Styles -->
+
+
+        <section class="styles d-none">
+            <div class="container">
+                <div class="section-title text-center mb-4">
+                    <h3 class="uppercase">Travel Styles</h3>
+                </div>
+                <div class="row no-gutters mb-4">
+
+                    <div class="col-md-6 col-lg-4">
+                        <a href="/travel-styles/villas" class="thumb text-center">
+                            <img src="/images/1576009531_original.jpeg?auto=format%2Cenhance&crop=entropy&fill=blur&fit=crop&h=480&q=60&w=640#tatid:17860950"
+                                alt="Vacation Homes and Villas">
+                            <div class="thumb-content gradient-bd">
+                                <h4 class="mb-0">Vacation Homes and Villas</h4>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="col-md-6 col-lg-4">
+                        <a href="/ocean-cruises" class="thumb text-center">
+                            <img src="/images/1577806762_original.jpeg?auto=format%2Cenhance&crop=entropy&fill=blur&fit=crop&h=480&q=60&w=640#tatid:17863968"
+                                alt="Ocean Cruises">
+                            <div class="thumb-content gradient-bd">
+                                <h4 class="mb-0">Ocean Cruises</h4>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="col-md-6 col-lg-4">
+                        <a href="/travel-styles/cruises" class="thumb text-center">
+                            <img src="/images/1576009252_original.jpeg?auto=format%2Cenhance&crop=entropy&fill=blur&fit=crop&h=480&q=60&w=640#tatid:17860946"
+                                alt="Cruises">
+                            <div class="thumb-content gradient-bd">
+                                <h4 class="mb-0">Cruises</h4>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="col-md-6 col-lg-4">
+                        <a href="/travel-styles/guided-vacations" class="thumb text-center">
+                            <img src="/images/1576010038_original.jpeg?auto=format%2Cenhance&crop=entropy&fill=blur&fit=crop&h=480&q=60&w=640#tatid:17860952"
+                                alt="Guided Vacations">
+                            <div class="thumb-content gradient-bd">
+                                <h4 class="mb-0">Guided Vacations</h4>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="col-md-6 col-lg-4">
+                        <a href="/travel-styles/river-cruises" class="thumb text-center">
+                            <img src="/images/1576010177_original.jpeg?auto=format%2Cenhance&crop=entropy&fill=blur&fit=crop&h=480&q=60&w=640#tatid:17860956"
+                                alt="River Cruises">
+                            <div class="thumb-content gradient-bd">
+                                <h4 class="mb-0">River Cruises</h4>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="col-md-6 col-lg-4">
+                        <a href="/travel-styles/small-ship-cruises" class="thumb text-center">
+                            <img src="/images/1576010445_original.jpeg?auto=format%2Cenhance&crop=entropy&fill=blur&fit=crop&h=480&q=60&w=640#tatid:17860954"
+                                alt="Small Ship Cruises">
+                            <div class="thumb-content gradient-bd">
+                                <h4 class="mb-0">Small Ship Cruises</h4>
+                            </div>
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section class="main-cta dark-bg" style="background-image: url(/images/1536692587_original.jpeg);">
+            <div class="container">
+                <div class="row justify-content-md-center">
+                    <div class="col-md-9 col-lg-7">
+                        <div class="section-title text-center">
+                            <h3 class="mb-3">“We want people to see the world as the best version of themselves.”</h3>
+                            <a href="/contact" class="btn btn-lg btn-outline-light mt-3">Start Your Trip</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <footer id="footer" class="d-print-none">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm">
+                    <ul class="nav justify-content-center">
+                        <li class="nav-item">
+                            <a class="nav-link" href="/travel-professionals">Travel Professionals</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/partner-with-us">Partner With Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/faqs">FAQs</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/about">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/why-us">Why Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/travel-resources">Resources</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/terms-and-conditions">Terms & Conditions</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/privacy-policy">Privacy Policy</a>
+                        </li>
+                        <li class="nav-item d-lg-none">
+                            <a class="nav-link" href="/contact">Contact Us</a>
+                        </li>
+                    </ul>
+                    <ul class="nav justify-content-center">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" target="_blank">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" target="_blank">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" target="_blank">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" target="_blank">
+                                <i class="fab fa-youtube"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="credits text-center mt-5">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, tempora!
+            </div>
+        </div>
+    </footer>
+    <!-- Print Only Footer -->
+    <div class="d-none d-print-block text-center">
+        <address>
+
+            A: Housing Complex, Durgapur, West Bengal 713216 •
+
+
+            PH: <a href="tel:99999-99999">99999-99999</a> •
+
+
+            E: <a href="">email@mail.com</a>
+        </address>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+        crossorigin="anonymous"></script>
+    <!-- Template Js -->
+    <script src="/assets/template.js"></script>
+    <!-- Slick Slider Js 1.9.0 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.js"></script>
+    <!-- GreenSock TweenMax -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.2/TweenMax.min.js"></script>
+    <!-- ScrollMagic -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.min.js"></script>
+    <!-- ScrollMagic GreenSock Plugin -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/animation.gsap.js"></script>
+    <script src="/assets/scrollmagic-main.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 500,
+        });
+    </script>
+    <!-- Settings Footer -->
+
+    <!-- Start of HubSpot Embed Code -->
+    <script type="text/javascript" id="hs-script-loader" async defer src="//js-na1.hs-scripts.com/21267032.js"></script>
+    <!-- End of HubSpot Embed Code -->
+</body>
+
+</html>
