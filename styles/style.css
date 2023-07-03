@@ -1664,4 +1664,106 @@ h5.card-title a {
       break-inside: avoid !important;
     }***/
 }
+
+/** banner-section **/
+@keyframes slide {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 1920px 0;
+  }
+}
+
+@-webkit-keyframes slide {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 1920px 0;
+  }
+}
+
+.banner-section {
+  position: relative;
+  padding: 170px 0px 270px 0px;
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 80vh;
+}
+
+.banner-section .pattern-layer {
+  position: absolute;
+  left: 0px;
+  bottom: 0px;
+  width: 100%;
+  height: 95px;
+  background-repeat: repeat-x;
+  animation: slide 100s linear infinite;
+  -webkit-animation: slide 100s linear infinite;
+}
+
+.banner-section .content-box {
+  position: relative;
+  display: block;
+  z-index: 5;
+}
+
+.banner-section .content-box h2 {
+  display: block;
+  font-size: 35px;
+  line-height: 50px;
+  font-family: "Roboto Condensed", sans-serif;
+  color: #ffffff;
+  font-weight: 900;
+  text-align: center;
+  margin-bottom: 29px;
+  width: 60%;
+  margin: auto;
+  text-shadow: 2px 2px 18px black;
+}
+
+/** banner-section **/
+.card.card-cascade.wider {
+  background-color: transparent;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+.card.card-cascade.wider .view.view-cascade {
+  z-index: 2;
+}
+
+.card.card-cascade.wider .card-body.card-body-cascade {
+  z-index: 1;
+  margin-right: 4%;
+  margin-left: 4%;
+  background: #fff;
+  border-radius: 0 0 .25rem .25rem;
+  -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+}
+
+.card.card-cascade.wider .card-body.card-body-cascade .card-footer {
+  margin-right: -1.25rem;
+  margin-left: -1.25rem;
+}
+
+.card.card-cascade.wider img {
+  height: 260px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+
+.card.card-cascade.wider.reverse .card-body.card-body-cascade {
+  z-index: 3;
+  margin-top: -1rem;
+  border-radius: .25rem;
+  -webkit-box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15);
+  box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15);
+}
 /*# sourceMappingURL=style.css.map */
